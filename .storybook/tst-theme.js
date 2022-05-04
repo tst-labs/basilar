@@ -9,5 +9,5 @@ export default create({
 
   brandTitle: 'BASILAR Storybook por tst-labs',
   brandUrl: 'https://www.tst.jus.br',
-  brandImage: '/android-chrome-192x192.png',
+  brandImage: 'android-chrome-192x192.png',
 });
