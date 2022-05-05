@@ -31,15 +31,15 @@ Adotaremos um processo de trabalho manual para adicionar novos componentes à @t
 ### 1. Clone o repositório em seu *host* de trabalho:
 ``` shell
 # ### Pode usar https ou ssh, como preferir. Abaixo uso SSH.
-# git clone git@github.com:tst-labs/basilar.git
+git clone git@github.com:tst-labs/basilar.git
 # ### Mude para o diretório do projeto
-# cd basilar
+cd basilar
 ```
 
 ### 2. Instale as dependências:
 ``` shell
 # ### IMPORTANTE: Usamos o yarn nesse projeto. Evite problemas!
-# yarn
+yarn
 # ### Ou
 # yarn install
 ```
@@ -54,22 +54,24 @@ Os componentes deverão ser organizados abaixo do diretório `src/componentes/` 
 ``` shell
 # ### Ao usar o yarn link você instalará a biblioteca no repositório global do host.
 # ### No diretório raíz do projeto execute o seguinte comando:
-# yarn link
+yarn link
 ```
 
 ### 5. Link a biblioteca ao seu projeto final:
 ``` shell
 # ### No diretório raíz do projeto que usará a biblioteca execute o seguinte comando:
-# yarn link @tst-labs/basilar
+yarn link @tst-labs/basilar
 ```
 Agora é só incluir o novo componente e testar em sua aplicação.
 
 ### 6. Crie uma nova *branch* de trabalho para submeter o(s) novo(s) componente(s):
 ``` shell
 # ### No diretório raíz do projeto:
-# git checkout -b novo-componente-fantastico
+git checkout -b novo-componente-fantastico
+```
+``` shell
 # ### Envie a nova *branch* para o repositório principal no Github:
-# git push --set-upstream origin novo-componente-fantastico
+git push --set-upstream origin novo-componente-fantastico
 ```
 
 E crie um novo *Pull Request* explicando o que está sendo proposto para inclusão na biblioteca. Marque o PR como WIP (Work In Progress) para evitar que seja incorporado à biblioteca acidentalmente.
