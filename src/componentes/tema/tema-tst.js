@@ -11,7 +11,7 @@ const fundo = "#F4F6F8"
 const temaTST = createTheme(
   {
     typography: {
-      // fontSize: 12,
+      fontFamily: "Aller, Roboto, Helvetica, Arial, sans-serif"
     },
     palette: {
       white: branco,
