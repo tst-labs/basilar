@@ -1,2 +1,2 @@
 export * from './componentes/index';
-export * from './icones/index';
+export * from './imagens/index';
