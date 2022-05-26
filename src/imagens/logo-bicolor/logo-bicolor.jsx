@@ -5,13 +5,14 @@ const ORIGINAL_WIDTH  = 36.450;
 const ORIGINAL_HEIGHT = 53.260;
 const ASPECT_RATIO    = ORIGINAL_WIDTH / ORIGINAL_HEIGHT;
 
-export const LogoBicolor = ({largura = ORIGINAL_WIDTH}) => {
+const LogoBicolor = ({largura = ORIGINAL_WIDTH}) => {
   
   let widthNum = (isNaN(largura) ? ORIGINAL_WIDTH : largura);
   
   return (
     <svg
       width={largura}
+      role="img"
       height={(widthNum/ASPECT_RATIO).toString()}
       viewBox={`0 0 ${ORIGINAL_WIDTH} ${ORIGINAL_HEIGHT}`}
     >
