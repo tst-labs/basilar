@@ -1,1 +1,0 @@
-export { LogoBicolor } from "./logo-bicolor.jsx";
