@@ -1,1 +1,0 @@
-export { CustomSVG } from './custom-svg.jsx';
