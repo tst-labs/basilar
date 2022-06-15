@@ -4,6 +4,7 @@ import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import postcss from 'rollup-plugin-postcss';
 import url from '@rollup/plugin-url';
+import svgr from '@svgr/rollup';
 
 export default {
     input: pkg.source,
@@ -13,6 +14,7 @@ export default {
     ],
     plugins: [
         external(),
+        svgr(),
         url(),
         postcss({
             extensions: ['.css'],

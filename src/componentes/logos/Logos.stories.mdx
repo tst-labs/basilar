@@ -6,50 +6,13 @@ import { Logo, LogoBicolor } from './index';
 
 <Meta title="Basilar/Componentes/Logos" />
 
-export const TemplateLogo = (args) => <Logo {...args } />
-export const TemplateLogoBicolor = (args) => <LogoBicolor {...args } />
-
 # Logos
 
 Um conjunto de Logos definidos pela pelo projeto de Identidade Visual da JS/TST tem como exemplo mais simples o primeiro logo:
 
 <Canvas>
-  <Story
-    name="Logo JT Básico"
-    args={{
-      largura: 40
-    }}
-  >
-    {TemplateLogo.bind({})}
-  </Story>
-</Canvas>
-
-Um Logo Bicoclor pode ser referenciado assim:
-
-<Canvas style={{backgroundColor: '#606060'}} >
-  <Story
-    style={{backgroundColor: '#606060'}}
-    name="Logo JT Bicolor (20)"
-    args={{
-      largura: 20
-    }}
-  >
-    {TemplateLogoBicolor.bind({})}
-  </Story>
-  <Story
-    name="Logo JT Bicolor (40)"
-    args={{
-      largura: 40
-    }}
-  >
-    {TemplateLogoBicolor.bind({})}
-  </Story>
-  <Story
-    name="Logo JT Bicolor (60)"
-    args={{
-      largura: 60
-    }}
-  >
-    {TemplateLogoBicolor.bind({})}
+  <Story name="Todos os Logos">
+    <Logo />
+    <LogoBicolor />
   </Story>
 </Canvas>
