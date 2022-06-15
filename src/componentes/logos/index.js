@@ -22,7 +22,7 @@ import { ReactComponent as LogoJTTST2MonoPreto } from './svgs/logo_jt_tst2_mono_
 import { ReactComponent as LogoJTTST2Simplificado } from './svgs/logo_jt_tst2_simplificado.svg';
 
 import { ReactComponent as LogoTST } from './svgs/logo_tst.svg';
-import { ReactComponent as LogoTSTMonoBicolor } from './svgs/logo_tst_mono_bicolor.svg';
+import { ReactComponent as LogoTSTBicolor } from './svgs/logo_tst_mono_bicolor.svg';
 import { ReactComponent as LogoTSTMonoAzul } from './svgs/logo_tst_mono_azul.svg';
 import { ReactComponent as LogoTSTMonoBranco } from './svgs/logo_tst_mono_branco.svg';
 import { ReactComponent as LogoTSTMonoPreto } from './svgs/logo_tst_mono_preto.svg';
@@ -57,7 +57,7 @@ export {
   LogoJTTST2MonoPreto,
   LogoJTTST2Simplificado,
   LogoTST,
-  LogoTSTMonoBicolor,
+  LogoTSTBicolor,
   LogoTSTMonoAzul,
   LogoTSTMonoBranco,
   LogoTSTMonoPreto,
