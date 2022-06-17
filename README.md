@@ -92,4 +92,4 @@ Usamos licença MIT para esse projeto.
 
 ## Colaboradores
 
-* @adriano.lemos.dev
+* @lemos.dev

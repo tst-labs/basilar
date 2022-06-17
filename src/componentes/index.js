@@ -19,7 +19,7 @@ export {
   LogoJTTST2MonoPreto,
   LogoJTTST2Simplificado,
   LogoTST,
-  LogoTSTMonoBicolor,
+  LogoTSTBicolor,
   LogoTSTMonoAzul,
   LogoTSTMonoBranco,
   LogoTSTMonoPreto,
