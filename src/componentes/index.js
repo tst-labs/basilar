@@ -1,4 +1,4 @@
-export { temaTST, ProvedorTemaTST } from './tema/index';
+export { temaTST, ProvedorTemaTST } from "./tema/index";
 export {
   Logo,
   LogoBicolor,
@@ -31,4 +31,5 @@ export {
   LogoTSTMonoBrancoExt,
   LogoTSTMonoPretoExt,
   LogoTSTSimplificadoExt
-} from './logos/index';
+} from "./logos/index";
+export { LoadingProvider, useLoading } from "./loading-provider/index";
