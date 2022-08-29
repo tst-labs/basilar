@@ -6,9 +6,7 @@ export default {
   component: LoadingProvider
 };
 
-export const Fechado = () => <LoadingProvider></LoadingProvider>;
-
-export const Aberto = () => {
+export const Mostra_Carregando = () => {
   function Componente() {
     const setLoading = useLoading(false);
     return (
