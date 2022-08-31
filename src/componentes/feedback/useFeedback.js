@@ -1,6 +1,6 @@
+import React from "react";
 import { Alert, AlertTitle } from "@material-ui/lab";
 import { useSnackbar } from "notistack";
-import React from "react";
 import { makeStyles } from "@material-ui/core";
 
 /**
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export function useFeedback() {
+export default function useFeedback() {
   const { enqueueSnackbar, closeSnackbar } = useSnackbar();
   const classes = useStyles();
 
