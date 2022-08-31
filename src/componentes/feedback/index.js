@@ -1,1 +1,1 @@
-export { useFeedback } from "./useFeedback";
+export { default as useFeedback } from "./useFeedback";
