@@ -1,7 +1,8 @@
 import React from "react";
-import { Alert, AlertTitle } from "@material-ui/lab";
+import { Alert, AlertTitle } from "@mui/material";
 import { useSnackbar } from "notistack";
-import { makeStyles } from "@material-ui/core";
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
 
 /**
  * @typedef MessageObject
@@ -10,19 +11,18 @@ import { makeStyles } from "@material-ui/core";
  * @property {array} bodyList Uma lista de mensagens que será exibida como tópicos (opcional)
  */
 
-const useStyles = makeStyles((theme) => ({
-  listRoot: {
-    margin: 0,
-    paddingLeft: theme.spacing(2)
-  },
-  listItem: {
-    marginBottom: theme.spacing(1)
-  }
-}));
+const listStyle = {
+  m: 0,
+  p: 0
+};
+
+const listItemStyle = {
+  mb: 0,
+  p: 0
+};
 
 export default function useFeedback() {
   const { enqueueSnackbar, closeSnackbar } = useSnackbar();
-  const classes = useStyles();
 
   function content(key, message = "", severity) {
     const body =
@@ -40,18 +40,13 @@ export default function useFeedback() {
         {title && <AlertTitle>{title}</AlertTitle>}
         {body}
         {bodyList && bodyList.length && (
-          <ul className={classes.listRoot}>
+          <List sx={listStyle}>
             {bodyList.map((item, index) => (
-              <li
-                key={index}
-                className={
-                  index !== bodyList.length - 1 ? classes.listItem : undefined
-                }
-              >
+              <ListItem key={index} sx={listItemStyle}>
                 {item}
-              </li>
+              </ListItem>
             ))}
-          </ul>
+          </List>
         )}
       </Alert>
     );

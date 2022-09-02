@@ -1,14 +1,8 @@
 import React from "react";
-import { Button, Chip, makeStyles } from "@material-ui/core";
+import { Button, Chip } from "@mui/material";
 import { useFeedback } from "./index";
 import { SnackbarProvider } from "notistack";
 import { ProvedorTemaTST } from "../index";
-
-const useStyles = makeStyles((theme) => ({
-  button: {
-    margin: theme.spacing()
-  }
-}));
 
 export default {
   title: "Basilar/Componentes/UseFeedback",
@@ -18,10 +12,8 @@ export default {
 export const Mostra_Sucesso = () => {
   function Componente() {
     const { showSuccess } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -44,10 +36,8 @@ export const Mostra_Sucesso = () => {
 export const Esconde_Em_1_Segundo = () => {
   function Componente() {
     const { showSuccess } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -75,10 +65,8 @@ export const Esconde_Em_1_Segundo = () => {
 export const Com_Elemento = () => {
   function Componente() {
     const { showSuccess } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -101,10 +89,8 @@ export const Com_Elemento = () => {
 export const Com_Titulo = () => {
   function Componente() {
     const { showSuccess } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -132,10 +118,8 @@ export const Com_Titulo = () => {
 export const Com_Lista = () => {
   function Componente() {
     const { showSuccess } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -145,7 +129,10 @@ export const Com_Lista = () => {
         onClick={() =>
           showSuccess({
             title: "Este é o título",
-            bodyList: ["Mensagem 1", "Mensagem 2"]
+            bodyList: [
+              "Esta é uma mensagem de teste com texto grande. Pode ser um texto bem grande para ver como fica na tela.",
+              "Mensagem 2"
+            ]
           })
         }
       >
@@ -166,10 +153,8 @@ export const Com_Lista = () => {
 export const Mostra_Erro = () => {
   function Componente() {
     const { showError } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -192,10 +177,8 @@ export const Mostra_Erro = () => {
 export const Mostra_Erro_API = () => {
   function Componente() {
     const { showError } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -223,10 +206,8 @@ export const Mostra_Erro_API = () => {
 export const Mostra_Info = () => {
   function Componente() {
     const { showInfo } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
@@ -249,10 +230,8 @@ export const Mostra_Info = () => {
 export const Mostra_Alerta = () => {
   function Componente() {
     const { showWarning } = useFeedback();
-    const classes = useStyles();
     const props = {
       variant: "outlined",
-      className: classes.button,
       color: "primary"
     };
 
