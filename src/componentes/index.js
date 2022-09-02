@@ -34,3 +34,4 @@ export {
 } from "./logos/index";
 export { LoadingProvider, useLoading } from "./loading-provider/index";
 export { RibbonAmbiente } from "./ribbon-ambiente/index";
+export { useFeedback } from "./feedback/index";

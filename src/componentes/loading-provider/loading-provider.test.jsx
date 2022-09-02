@@ -1,7 +1,6 @@
 import React from "react";
-import { act, render, screen, waitFor } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import Button from "@mui/material/Button";
-
 import { LoadingProvider, useLoading } from "./index";
 
 describe("Testes do Loading Provider", () => {
