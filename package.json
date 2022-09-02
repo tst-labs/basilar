@@ -20,12 +20,9 @@
     "componentes"
   ],
   "dependencies": {
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/lab": "^4.0.0-alpha.61",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "notistack": "^2.0.5",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-dev-ribbon": "^0.0.5",
@@ -73,6 +70,7 @@
     "@emotion/styled": "^11.8.1",
     "@mui/material": "^5.6.4",
     "@mui/styles": ">= 5.10.x < 6",
+    "notistack": "^>=2.0.x < 3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   },
@@ -102,6 +100,7 @@
     "@storybook/testing-library": "^0.0.11",
     "@storybook/theming": "^6.5.6",
     "@svgr/rollup": "^6.2.1",
+    "notistack": "^>=2.0.x < 3",
     "npm-run-all": "^4.1.5",
     "rollup": "^2.71.1",
     "rollup-plugin-delete": "^2.0.0",

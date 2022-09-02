@@ -1,7 +1,7 @@
 import React from "react";
 import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { Button, Chip } from "@material-ui/core";
+import { Button, Chip } from "@mui/material";
 import { SnackbarProvider } from "notistack";
 
 import { useFeedback } from "./index";
