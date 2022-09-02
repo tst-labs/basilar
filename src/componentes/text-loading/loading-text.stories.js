@@ -1,6 +1,5 @@
 import React from "react";
 import { LoadingText } from "./index";
-import Button from "@mui/material/Button";
 
 export default {
   title: "Basilar/Componentes/LoadingText",
