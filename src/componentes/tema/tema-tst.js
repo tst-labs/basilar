@@ -10,7 +10,6 @@ const fundo = "#F4F6F8";
 
 const temaTST = createTheme(
   {
-    spacing: [0, 4, 8, 16, 32, 64],
     typography: {
       fontFamily: "Aller, Roboto, Helvetica, Arial, sans-serif"
     },
