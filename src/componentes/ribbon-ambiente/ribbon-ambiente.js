@@ -9,7 +9,18 @@ const RibbonAmbiente = (props) => {
   if (ambiente === "") {
     ambiente = DESENVOLVIMENTO;
   }
-  return ambiente !== PRODUCAO && <Ribbon width={200}>{ambiente}</Ribbon>;
+  return (
+    ambiente !== PRODUCAO && (
+      <Ribbon
+        width={200}
+        //angle={0.00001}
+        //        style={{ top: 0, opacity: 0.3, left: 0 }}
+        style={{ opacity: 0.3 }}
+      >
+        {ambiente}
+      </Ribbon>
+    )
+  );
 };
 
 RibbonAmbiente.propTypes = {
