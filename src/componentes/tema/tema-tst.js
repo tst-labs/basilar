@@ -1,12 +1,13 @@
-import { red } from  "@mui/material/colors";
+import { red } from "@mui/material/colors";
 import { ptBR } from "@mui/material/locale";
 import { createTheme } from "@mui/material/styles";
 
 const branco = "#FFF";
 const preto = "#000";
+const cinza = "#e0e0e0";
 const primariaJT = "#0067A0";
 const secundariaJT = "#19857b";
-const fundo = "#F4F6F8"
+const fundo = "#F4F6F8";
 
 const temaTST = createTheme(
   {
@@ -16,6 +17,7 @@ const temaTST = createTheme(
     palette: {
       white: branco,
       black: preto,
+      grey: cinza,
       primary: {
         main: primariaJT
       },

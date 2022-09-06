@@ -32,4 +32,7 @@ export {
   LogoTSTMonoPretoExt,
   LogoTSTSimplificadoExt
 } from "./logos/index";
+export { LoadingProvider, useLoading } from "./loading-provider/index";
 export { RibbonAmbiente } from "./ribbon-ambiente/index";
+export { useFeedback } from "./feedback/index";
+export { LoadingText } from "./loading-text/index";
