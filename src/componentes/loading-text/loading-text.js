@@ -1,7 +1,7 @@
 import React from "react";
 import { Typography } from "@mui/material";
 import { makeStyles } from "@mui/styles";
-import { temaTST } from "../index";
+import { grey } from "@mui/material/colors";
 
 const useStyles = makeStyles(() => ({
   "@keyframes glow": {
@@ -17,7 +17,7 @@ const useStyles = makeStyles(() => ({
   },
   glowText: {
     animation: `$glow 1.5s ease-in-out infinite`,
-    background: temaTST.palette.grey,
+    background: grey[300],
     color: "transparent",
     cursor: "progress",
     display: "inline-block"
