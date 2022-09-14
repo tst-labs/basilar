@@ -1,6 +1,6 @@
 {
   "name": "@tst-labs/basilar",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Biblioteca de componentes React/MUI de base para os projetos front end do TST.",
   "author": {
     "name": "Tribunal Superior do Trabalho - TST",
