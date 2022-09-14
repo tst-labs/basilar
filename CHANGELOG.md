@@ -1,6 +1,16 @@
 # Changelog
 Todas as mudanças relevantes neste projeto serão documentadas neste arquivo.
 
+## :rocket: v0.2.0 (14-09-2022)
+
+### Features
+
+<li> <a href="http://github.com/tst-labs/basilar/commit/34f7738670a4d8055d77926375a023a48da24ca8">veja o commit &bull;</a> Componente LoadingText</li> 
+<li> <a href="http://github.com/tst-labs/basilar/commit/8a4bfd004cc3a03b1b5be5d90a3edd8dc44b1777">veja o commit &bull;</a> refactor: Atualiza a versão do Storybook (6.5.6)</li> 
+<li> <a href="http://github.com/tst-labs/basilar/commit/e256a9f2302170cf72db3f1de7ded9c0aff3abe1">veja o commit &bull;</a> Componente useFeedback</li> 
+<li> <a href="http://github.com/tst-labs/basilar/commit/c2bf4819b7436652745d9caa54898c5a2f1cdeca">veja o commit &bull;</a> Componente LoadingProvider</li> 
+
+---
 ## v0.1.0 (17-06-2022)
 
 ### Features

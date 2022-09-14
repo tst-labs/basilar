@@ -6,6 +6,21 @@
     "name": "Tribunal Superior do Trabalho - TST",
     "email": "adriano.lemos@tst.jus.br"
   },
+  "contributors": [
+    {"name": "Adriano Lemos","email": "adriano.lemos@tst.jus.br"},
+    {"name": "Jean Clay", "email": "jean.clay@tst.jus.br"},
+    {"name": "Rodrigo Vieira", "email": "rodrigo.vieira@tst.jus.br"}
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tst-labs/basilar.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tst-labs/basilar/issues",
+    "email": "adriano.lemos@tst.jus.br"
+  },
+  "homepage": "https://tst-labs.github.io/basilar/",
+  "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
   "source": "src/index.js",

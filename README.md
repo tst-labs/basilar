@@ -5,6 +5,44 @@ A @tst-labs/basilar é uma proposta de biblioteca de componentes, inicialmente d
 > Nesse primeiro momento, a @tst-labs/basilar está configurada para usar as versões **v5.6.4** da ***MUI*** e **v18.1.0** do ***React***.
 > Em um momento futuro (não muito distante) pretendemos torná-la compatível com as versões mais antigas em uso nos projetos de *front end* em produção no TST.
 
+## Começando a usar (*Getting Started*)
+
+Instale a `@tst-labs/basilar` como dependência no seu projeto React
+```console
+yarn add @tst-labs/basilar
+```
+> Recomendamos o uso de `yarn` em seus projetos, mas não é uma exigência.
+
+Em seguida é só escolher que funcionalidades exportadas pela `@tst-labs/basilar` deseja usar no seu projeto. Por exemplo, use o tema padrão do TST em seu projeto:
+
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import CssBaseline from '@mui/material/CssBaseline';
+
+import { ProvedorTemaTST } from '@tst-labs/basilar';
+
+import App from './app/app';
+
+import './index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <React.StrictMode>
+    <ProvedorTemaTST>
+      <CssBaseline />
+      <App />
+    </ProvedorTemaTST>
+  </React.StrictMode>
+);
+
+```
+
+## Pré-requisitos (ambiente de desenvolvimento e uso)
+
+Usamos [**Node.js**](https://nodejs.org/) v16.x, mas já foi testada com v14.x e funciona bem. Recomendamos o uso do [**nvm**](https://github.com/nvm-sh/nvm) para gerencia as versões do Node em sua máquina de trabalho.
+
 ## Scripts do projeto
 
 Usamos o `yarn` nesse projeto. No diretório do projeto você pode executar os seguintes de scripts:
